@@ -1,7 +1,14 @@
+import java.util.Scanner;
+
 public class NumberPattern {
 
     public static void main(String[] args) {
-        printPattern(5);
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of rows: ");
+        int totalRows = sc.nextInt();
+
+        printPattern(totalRows);
     }
 
     public static void printPattern(int totalRows) {
